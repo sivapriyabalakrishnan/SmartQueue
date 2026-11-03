@@ -56,16 +56,6 @@
 4. Access: http://localhost/smartqueue/
 ```
 
-### 🔐 Login Credentials
-
-**Admin:**
-- Email: admin@smartqueue.com
-- Password: admin123
-
-**Test User:**
-- Email: user@test.com
-- Password: test123
-
 ### ✅ Features
 
 **Customer Features:**

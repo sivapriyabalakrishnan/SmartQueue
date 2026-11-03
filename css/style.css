@@ -1,0 +1,299 @@
+/* Smart Queue Manager - Modern Professional Stylesheet */
+
+/* CSS Variables for Theme - Maroon, Black & White */
+:root {
+    --primary-color: #800020;
+    --primary-dark: #5c0016;
+    --primary-light: #a0002a;
+    --secondary-color: #1a1a1a;
+    --accent-color: #800020;
+    --danger-color: #b91c1c;
+    
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --bg-tertiary: #e5e5e5;
+    
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --text-tertiary: #737373;
+    
+    --border-color: #d4d4d4;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #800020 0%, #1a1a1a 100%);
+    min-height: 100vh;
+    color: var(--text-primary);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+    animation: fadeInDown 0.8s ease-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.9) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header p {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Main container with modern glassmorphism */
+.bg-wave-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 1.5rem;
+    position: relative;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Optional: Animated background pattern */
+.bg-wave-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bg-wave-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Modern Button Styles */
+.btn {
+    text-decoration: none;
+    padding: 1.125rem 2.5rem;
+    border-radius: var(--radius-lg);
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border: 2px solid transparent;
+    color: #ffffff;
+    
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    box-shadow: var(--shadow-lg);
+    
+    transition: var(--transition);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shine effect on hover */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+/* Hover effect */
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn:active {
+    transform: translateY(-2px);
+}
+
+/* Secondary button - Clean white glassmorphism */
+.btn.secondary {
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--primary-color);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.btn.secondary:hover {
+    background: rgba(255, 255, 255, 1);
+    color: var(--primary-dark);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Admin / Logout button - Maroon theme */
+.btn.admin {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: #ffffff;
+    border: 2px solid transparent;
+}
+
+.btn.admin:hover {
+    background: linear-gradient(135deg, var(--primary-dark), #3d000e);
+    box-shadow: 0 12px 30px rgba(128, 0, 32, 0.3);
+}
+
+/* Danger/Logout variant */
+.btn.danger {
+    background: linear-gradient(135deg, var(--danger-color), #dc2626);
+    color: #ffffff;
+}
+
+.btn.danger:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    box-shadow: 0 12px 30px rgba(239, 68, 68, 0.3);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+footer a {
+    color: #a0002a;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    .bg-wave-container {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    
+    footer {
+        font-size: 0.75rem;
+    }
+}
+
+/* Small enhancements */
+.btn:focus {
+    outline: none;
+    box-shadow: var(--shadow-xl), 0 0 0 3px rgba(128, 0, 32, 0.2);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Add subtle pulse animation for primary CTA */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 10px 25px -3px rgba(128, 0, 32, 0.4);
+    }
+}
+
+.btn.primary-cta {
+    animation: pulse 2s ease-in-out infinite;
+}

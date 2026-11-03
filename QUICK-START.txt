@@ -1,0 +1,144 @@
+╔══════════════════════════════════════════════════════════════╗
+║   SMART QUEUE MANAGER - QUICK START GUIDE                   ║
+╚══════════════════════════════════════════════════════════════╝
+
+📦 INSTALLATION (3 STEPS):
+
+1. EXTRACT FILES
+   → Copy entire "smartqueue-rebuilt" folder to:
+   → C:\xampp\htdocs\smartqueue
+
+2. SETUP DATABASE
+   → Start XAMPP (Apache + MySQL)
+   → Open: http://localhost/phpmyadmin
+   → Import "database.sql"
+
+3. ACCESS SYSTEM
+   → Homepage: http://localhost/smartqueue/
+   → Admin: http://localhost/smartqueue/admin.php
+
+🔐 LOGIN CREDENTIALS:
+
+Admin Account:
+   Email: admin@smartqueue.com
+   Password: admin123
+
+Test User Account:
+   Email: user@test.com
+   Password: test123
+
+📂 WHAT'S INCLUDED:
+
+✓ Professional Homepage (index.html)
+✓ Modern Login Page (login.php)
+✓ User Registration (register.php)
+✓ Admin Dashboard (admin.php)
+✓ Queue Management System
+✓ Appointment Booking
+✓ Complete Database (database.sql)
+✓ Responsive Design (css/style.css)
+
+🎨 DESIGN FEATURES:
+
+• Purple/Blue Gradient Backgrounds
+• Glassmorphism Effects
+• Smooth Animations
+• Mobile Responsive
+• Professional Typography
+• Modern UI/UX
+
+✨ KEY FEATURES:
+
+Customer Side:
+  → Join queue instantly
+  → Book appointments
+  → Track position real-time
+  → View history
+
+Admin Side:
+  → Dashboard with statistics
+  → Manage queue (Start/Complete/Cancel)
+  → View appointments
+  → Analytics
+
+⚙️ CUSTOMIZATION:
+
+Colors: Edit css/style.css
+Business Info: Update database.sql settings table
+Services: Add via admin panel
+Logo: Replace in /images folder
+
+📧 FILES OVERVIEW:
+
+Core Pages:
+  - index.html (Homepage)
+  - login.php (Login)
+  - register.php (Sign up)
+  - admin.php (Admin panel)
+
+Backend:
+  - db.php (Database connection)
+  - php/take_queue.php (Join queue)
+  - php/book_appointment.php (Booking)
+  - call_next.php (Queue management)
+  - update_queue_status.php (Status updates)
+  - logout.php (Logout handler)
+
+Resources:
+  - css/style.css (Styles)
+  - js/scipt.js (JavaScript)
+  - database.sql (Database setup)
+
+Documentation:
+  - README.md (Complete guide)
+  - SETUP-INSTRUCTIONS.md (Detailed setup)
+  - QUICK-START.txt (This file)
+
+🚨 TROUBLESHOOTING:
+
+Problem: Database connection error
+Solution: Check MySQL is running, verify db.php credentials
+
+Problem: Page not found
+Solution: Ensure files in htdocs/smartqueue/, Apache running
+
+Problem: Login not working
+Solution: Import database.sql again, clear browser cache
+
+Problem: Blank page
+Solution: Check PHP error logs in XAMPP
+
+📱 BROWSER COMPATIBILITY:
+
+✓ Google Chrome (Recommended)
+✓ Firefox
+✓ Safari
+✓ Microsoft Edge
+
+💡 TIPS:
+
+1. Always start Apache + MySQL before accessing
+2. Import database.sql FIRST before using system
+3. Use Chrome DevTools (F12) for debugging
+4. Check XAMPP logs for errors
+5. Clear browser cache if design looks broken
+
+🎯 NEXT STEPS:
+
+1. ✓ Extract files to htdocs
+2. ✓ Import database
+3. ✓ Test admin login
+4. ✓ Create test queue entry
+5. ✓ Customize branding
+6. ✓ Add your services
+7. ✓ Deploy!
+
+═══════════════════════════════════════════════════════════════
+
+Built with ❤️ for efficient queue management
+Version: 1.0.0 | Last Updated: February 2026
+
+For detailed documentation, read README.md
+For step-by-step setup, read SETUP-INSTRUCTIONS.md
+
+═══════════════════════════════════════════════════════════════
